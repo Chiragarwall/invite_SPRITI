@@ -8,7 +8,7 @@
 <script>
 /* Always show the latest deployment. BUILD is stamped into this file; version.json is always fetched
    fresh from the server. If they differ, this browser is holding a stale copy: reload once, cache-busted. */
-var BUILD = "20261031-165021";
+var BUILD = "20261101-012141";
 (function () {
   try {
     if (!/^https?:/.test(location.protocol)) return;               // skip file:// previews
@@ -768,14 +768,15 @@ a { color: inherit; }
 }
 .chapter h3 { font-size: 2rem; margin: 9px 0; }
 .chapter p  { line-height: 1.85; color: #715f65; margin: 0; }
-.made-by { margin: 26px auto 0; max-width: 420px; text-align: center; }
-.made-by .mb-label { display: flex; align-items: center; gap: 10px; font-size: .5rem; letter-spacing: .34em; text-transform: uppercase; color: rgba(201,167,103,.6); }
-.made-by .mb-label::before, .made-by .mb-label::after { content: ""; flex: 1; height: 1px; background: rgba(201,167,103,.3); }
-.made-by .mb-names { display: flex; justify-content: center; align-items: center; gap: 14px; margin-top: 10px; }
-.made-by .mb-who { flex: 1; font-family: "Parisienne", cursive; font-size: 1.25rem; line-height: 1.2; color: var(--gold-light); }
-.made-by .mb-who small { display: block; font-family: "DM Sans", sans-serif; font-size: .46rem; letter-spacing: .26em; text-transform: uppercase; color: rgba(234,215,170,.5); margin-bottom: 3px; }
-.made-by .mb-amp { font-family: "Cormorant Garamond", serif; font-style: italic; color: var(--gold); font-size: 1rem; opacity: .8; }
-.made-by .mb-sub { margin-top: 10px; font-size: .5rem; letter-spacing: .22em; text-transform: uppercase; color: rgba(234,215,170,.4); }
+.made-by { margin: 20px auto 0; max-width: 300px; text-align: center; }
+.made-by .mb-label { display: flex; align-items: center; gap: 10px; font-size: .44rem; letter-spacing: .34em; text-transform: uppercase; color: rgba(201,167,103,.45); }
+.made-by .mb-label::before, .made-by .mb-label::after { content: ""; flex: 1; height: 1px; background: rgba(201,167,103,.2); }
+.made-by .mb-names { margin-top: 8px; font-family: "Parisienne", cursive; font-size: 1.2rem; line-height: 1.2; color: rgba(234,215,170,.72); }
+.made-by .mb-amp { font-family: "Cormorant Garamond", serif; font-style: italic; color: rgba(201,167,103,.6); font-size: .95rem; margin: 0 3px; }
+.made-by .mb-rel { display: flex; justify-content: center; gap: 22px; margin-top: 4px; font-family: "Cormorant Garamond", serif; font-style: italic; font-size: .78rem; color: rgba(234,215,170,.5); }
+.made-by .mb-rel span { text-align: center; }
+.made-by .mb-rel small { display: block; font-family: "DM Sans", sans-serif; font-style: normal; font-size: .4rem; letter-spacing: .24em; text-transform: uppercase; color: rgba(234,215,170,.35); margin-bottom: 1px; }
+.made-by .mb-sub { margin-top: 8px; font-size: .42rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(234,215,170,.3); }
 .story-hashtag { margin: 14px 0 0; font-size: .9rem; color: #8a7552; letter-spacing: .04em; }
 .story-hashtag .spriti-logo { font-size: 1.5rem; margin-left: 4px; vertical-align: -3px; }
 .story-hashtag .spriti-logo .sl-s   { color: #b08a45; }
@@ -2234,11 +2235,8 @@ a { color: inherit; }
   <p class="footer-tag"><span class="spriti-logo" style="font-size:.9rem"><span class="sl-char sl-s">#</span><span class="sl-char sl-s">S</span><span class="sl-char sl-p">P</span><span class="sl-char sl-mid">RITI</span></span> · 03 December 2026 · Bareilly</p>
   <div class="made-by">
     <div class="mb-label">Issued by</div>
-    <div class="mb-names">
-      <div class="mb-who"><small>Dulhe ka</small>Bhai</div>
-      <span class="mb-amp" aria-hidden="true">&amp;</span>
-      <div class="mb-who"><small>Dulhan ka</small>Devar</div>
-    </div>
+    <div class="mb-names">Chirag <span class="mb-amp" aria-hidden="true">&amp;</span> Roshni</div>
+    <div class="mb-rel"><span><small>Dulhe ke</small>Bhai-Bhen</span><span><small>Dulhan ke</small>Devar-Nanad</span></div>
     <div class="mb-sub">Made with love &amp; a lot of chaos</div>
   </div>
   <div class="hero-mrz" style="margin-top:22px" aria-hidden="true">
